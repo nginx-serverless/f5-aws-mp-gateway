@@ -6,10 +6,11 @@ Within the proxy layer of f5-aws-mp-gateway, additional functionality can be con
 - For internal/micro services that can't authenticate against the AWS Marketplace SaaS products (e.g. don't have libraries available) the gateway can provide a means to accessing Marketplace SaaS products without authentication
 - Protecting Marketplace SaaS products from arbitrary public access
 - For internal/micro services that can't authenticate against the AWS Marketplace SaaS products
-- Rate limiting AWS Marketplace SaaS products
-- Authenticating users to authorize AWS Marketplace SaaS products with a OIDC
-- Protecting AWS Marketplace SaaS products with a WAF
+- [Rate limiting](http://nginx.org/en/docs/http/ngx_http_limit_req_module.html) AWS Marketplace SaaS products
+- Authenticating users to authorize AWS Marketplace SaaS products with a [OIDC](https://github.com/nginx-openid-connect)
+- Protecting AWS Marketplace SaaS products with a [WAF](https://docs.nginx.com/nginx-waf/)
 
+In addition to that it provides code example of serverless integration for SaaS products listed on the AWS Marketplace via NGINX.
 
 ## References
 - [AWS Marketplace Serverless SaaS Integration on AWS](https://aws.amazon.com/solutions/implementations/aws-marketplace-saas/)
